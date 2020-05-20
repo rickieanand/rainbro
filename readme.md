@@ -1,7 +1,17 @@
-#Rainbro
+# Rainbro v1.0.0
 
 This is a library to implement interpolation of various colors between start and end color. Mostly used for adding colors to charts to display intensity as the value raises or decreases.
 
+
+## Installation
+
+Using npm:
+```shell
+$ npm i -g npm
+$ npm i --save rainbro
+```
+
+## Usage
 ```
 import { interpolateHSL, h2r, r2h } from 'rainbro'
 
@@ -34,3 +44,5 @@ import { interpolateHSL, h2r, r2h } from 'rainbro'
 </PieChart>
 
 ```
+## Suport
+Please check the Github repo [package source](https://github.com/rickieanand/rainbrow/) for more details.
