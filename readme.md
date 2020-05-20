@@ -17,31 +17,24 @@ import { interpolateHSL, h2r, r2h } from 'rainbro'
 
 ...
 
-<PieChart width={340} height={400}>
-    <Pie
-        data={PiechartData}
-        cx={150}
-        cy={150}
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={120}
-        fill="#8884d8"
-        dataKey="value"
-    >
-        {
-            PiechartData?.map((entry, index) => {
-
-                const startColor = h2r('#85929E')
-                const endColor = h2r('#17202A')
-                const icol = interpolateHSL(startColor, endColor, (1 / PiechartData.length) * index)
-                const hcol = r2h(icol)
-                return <Cell key={`cell-${index}`} entry={entry} fill={hcol} />
-            })
-        }
-    </Pie>
-    <Tooltip />
-    <Legend />
-</PieChart>
+#<PieChart width={340} height={400}>
+#    <Pie
+#        data={PiechartData}
+#        cx={150}
+#        cy={150}
+#        dataKey="value"
+#    >
+#        {
+#            PiechartData?.map((entry, index) => {
++               const startColor = h2r('#85929E')
++               const endColor = h2r('#17202A')
++               const interpolatedColor = interpolateHSL(startColor, endColor, (1 / PiechartData.length) * index)
++               const resultantColor = r2h(interpolatedColor)
++               return <Cell key={`cell-${index}`} entry={entry} fill={resultantColor} />
+#            })
+#        }
+#    </Pie>
+#</PieChart>
 
 ```
 ## Suport
