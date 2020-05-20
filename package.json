@@ -1,0 +1,24 @@
+{
+  "name": "rainbro",
+  "version": "1.0.0",
+  "description": "A package to implement interpolation of colors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickieanand/rainbrow.git"
+  },
+  "keywords": [
+    "interpolation",
+    "of",
+    "colors"
+  ],
+  "author": "Rickie Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickieanand/rainbrow/issues"
+  },
+  "homepage": "https://github.com/rickieanand/rainbrow#readme"
+}
