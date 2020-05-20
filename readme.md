@@ -13,9 +13,10 @@ $ npm i --save rainbro
 
 ## Usage
 ```diff
-import { interpolateHSL, h2r, r2h } from 'rainbro'
++import { interpolateHSL, h2r, r2h } from 'rainbro'
 
-...
+#...
+#...
 
 #<PieChart width={340} height={400}>
 #    <Pie
